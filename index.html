@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
+<body>
+    <h1> DML DEMO PROFILE CARD </h1>
+<div class="container">
+    <div class="card">
+      <div id="back" class="cardBack">
+          <h1 id="achieve"> Achievements </h1>
+          <h2> Top Score - 600k</h2>
+          <span id="basic1">
+            <h2>Highest Title</h2>
+            <img id="title" src="assets/Wind.png" alt="icon">
+          </span>
+          <span id="basic2">
+              <h3>Last Events All time Score</h3>
+              <div id="chartdiv"> </div>
+          </span>
+          <p>>Made for IA</p>
+      </div>
+      <div id="front" class="cardFront">
+          <span class="details">
+          <img src="assets/Altum_Tenebrus_Dragon_Icon.png" alt="icon" id="icon">
+          <h1 id="name">IA_Aj7</h1>
+          </span>
+          <p> Clan</p>
+          <span class="clan">
+              <a href="IAClan.html">
+                 <img src="assets/IALOGO.png" alt="logo" id="logo">
+              </a>
+             <h1 id="clan">Indian Army</h1>
+          </span>
+          <p>Clan Role</p>
+          <span class="role">
+            <h2>Officer</h2>
+            <img id="role" src="assets/Officer_Icon.png" alt="role">
+          </span>
+          <p>Team</p>
+          <span class="fav_team">
+              <a href="">
+                  <img id="team" src="assets/Snowflake_Dragon_Icon.png" alt="CPOS">
+              </a>
+              <a href="">
+                  <img id="team" src="assets/Fire_Dragon_Icon.png" alt="BD">
+              </a>
+              <a href="">
+                  <img id="team" src="assets/Wind_Dragon_Icon.png" alt="ALTUM">
+              </a>
+          </span>
+          <p>Favourite Elements</p>
+          <span class="fav_elem">
+              <img id="elem" src="assets/waterlogo.png" alt="">
+              <img id="elem" src="assets/tyrantlogo.png" alt="">
+          </span>
+      </div>
+      <button type="button" id="flip_btn" class="btn">
+          <<<  >>>
+      </button>
+    </div>
+</div>
+
+<h1> This is Demo, Design and Info can be changed...</h1>
+  <script src="script.js"> </script>
+</body>
+</html>

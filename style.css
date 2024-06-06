@@ -1,0 +1,175 @@
+* {
+  font-family: sans-serif, Open-Sans;
+  margin: 0;
+}
+
+body {
+  background-color: skyblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  margin-top: 7rem;
+  height: 470px;
+  width: 320px;
+  position: relative;
+  border-radius: 0.75rem;
+}
+
+#icon {
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#achieve {
+    font-family: fantasy;
+}
+
+.role,
+.fav_elem {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  padding: 3px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+#basic1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h3 {
+  display: inline;
+}
+
+p {
+  text-decoration-line: underline;    text-decoration-style:solid bold;
+    text-decoration-color: #A4508B;
+}
+
+#front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#name,
+#clan {
+  font-size: 27px;
+  display: inline;
+  padding: 3px;
+}
+
+#role {
+  padding: 2px;
+  height: 30px;
+  width: 30px;
+}
+
+#elem {
+  height: 50px;
+  widows: 50px;
+  padding: 1px;
+}
+
+.clan,
+.fav_team {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 2px;
+  position: relative;
+}
+
+#logo {
+  height: 40px;
+  width: 40px;
+}
+
+#team {
+  height: 55px;
+  width: 55px;
+  padding: 2px;
+}
+
+#title {
+    height: 30px;
+    width: 30px;
+}
+
+#IA {
+    font-weight: bold;
+}
+
+.btn {
+  font-size: large;
+  font-weight: bold;
+  background: none;
+  color: black;
+  border-radius: 0.85rem;
+  border: none;
+  position: relative;
+  top: 445px;
+  height: 27px;
+  text-align: center;
+  align-items: center;
+  width: 180px;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 270px;
+  color: whitesmoke;
+}
+
+.cardFront,
+.cardBack {
+  color: white;
+  background-image: linear-gradient(
+    0deg,
+   rgb(26, 17, 92,0.8),
+    rgb(1, 2, 27,0.8) 80%
+  );
+  box-sizing: border-box;
+  border-radius: 0.85rem;
+  height: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-shadow: 0 7px 7px 2px rgba(0, 7, 2, 0.7),
+    0 7px 7px 2px rgba(0, 8, 2, 0.2);
+  width: 100%;
+  transition: transform 0.7s ease-in-out;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cardBack {
+  transform: perspective(1000px) rotateY(180deg);
+}
+
+.cardBack.flipped {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.cardFront {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.cardFront.flipped {
+  transform: perspective(1000px) rotateY(-180deg);
+}
